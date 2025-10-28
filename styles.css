@@ -1,0 +1,55 @@
+body { 
+    background-color: rgb(255, 152, 221);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(233, 3, 118);
+    text-align: center;
+    font-family: 'elementary';
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.images img {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    border-radius: 8px;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        margin: auto;
+        background-color: rgb(255, 152, 221);
+        width: 100%;
+    }
+    
+    .images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+    .images img {
+        width: 100%;
+        max-width: none;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+}
+
+@font-face {
+    font-family:'elementary';
+    src: url(fonts/Interlope-Regular.ttf);
+}
+
